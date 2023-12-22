@@ -1,0 +1,20 @@
+spring:
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kwekwe?serverTimezone=UTC&characterEncoding=UTF-8
+    username: kwekwe
+    password: kwekwe231221#
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace

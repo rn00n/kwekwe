@@ -1,0 +1,25 @@
+server:
+  port: 5000
+
+spring:
+  config:
+    use-legacy-processing: true
+  profiles:
+    include:
+      - datasource
+      - security
+      - oauth2_client
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+
+kotlin:
+  coroutine:
+    call-adapter:
+      enabled: true
+
+init-data: false

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 300px;
+    padding: 40px 20px; /* 패딩 값을 위 아래로 늘렸습니다. */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kakao-login-link {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.kakao-login-link:hover {
+    transform: scale(1.05);
+}
+
+.kakao-login-link img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        max-width: 220px;
+    }
+}
